@@ -91,7 +91,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "लोड हो रहा है...", noResults: "कोई परिणाम नहीं मिला", viewDetails: "विवरण देखें", back: "वापस", whatsappHelp: "मदद चाहिए? WhatsApp पर बात करें", selectLanguage: "भाषा चुनें", all: "सभी" },
   },
   te: {
-    nav: { home: "హోమ్", crops: "పంట గ్రంథాలయం", community: "సమాజం", mandi: "మండి ధరలు", transport: "రవాణా", diagnosis: "రోగ నిర్ధారణ", recommendations: "సిఫార్సులు" },
+    nav: { home: "హోమ్", crops: "పంట గ్రంథాలయం", community: "సమాజం", mandi: "మండి ధరలు", transport: "రవాణా", diagnosis: "రోగ నిర్ధారణ", recommendations: "సిఫార్సులు", yieldPredict: "దిగుబడి అంచనా" },
     hero: { title: "ఆగ్రీలింక్ — రైతు పంట మేధస్సు", subtitle: "మీ పూర్తి వ్యవసాయ సహచరుడు: పంట సమాచారం, సమాజ Q&A, మండి ధరలు, రవాణా, మరియు AI రోగ నిర్ధారణ", cta: "పంటలు చూడండి", badge: "AI-ఆధారిత వ్యవసాయ మేధస్సు", problemTitle: "వెబ్ ట్రాక్: రైతు పంట మేధస్సు + సమాజ వేదిక", aiDiagnosis: "AI నిర్ధారణ" },
     stats: { cropsListed: "పంటలు జాబితా", languages: "భాషలు", mandiMarkets: "మండి మార్కెట్లు", aiPowered: "AI ఆధారిత", realtime: "రియల్-టైమ్" },
     features: { cropsDesc: "సీజన్, నేల, నీటిపారుదల, పురుగులు, ఎరువుల షెడ్యూల్", communityDesc: "Q&A, స్థానిక భాష, నిపుణుల సమాధానాలు", mandiDesc: "జిల్లా/మార్కెట్ ధరలు + సమీపంలో వెతకండి", transportDesc: "లాజిస్టిక్స్‌కు కనెక్ట్, పికప్ అభ్యర్థన", diagnosisDesc: "ఫోటోల నుండి AI రోగ గుర్తింపు", recommendationsDesc: "నేల, ప్రదేశం & సీజన్ ఆధారిత పంట సలహా" },
@@ -112,7 +112,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "లోడ్ అవుతోంది...", noResults: "ఫలితాలు కనుగొనబడలేదు", viewDetails: "వివరాలు చూడండి", back: "వెనక్కి", whatsappHelp: "సహాయం కావాలా? WhatsApp లో చాట్ చేయండి", selectLanguage: "భాష ఎంచుకోండి", all: "అన్ని" },
   },
   ta: {
-    nav: { home: "முகப்பு", crops: "பயிர் நூலகம்", community: "சமூகம்", mandi: "மண்டி விலைகள்", transport: "போக்குவரத்து", diagnosis: "நோய் கண்டறிதல்", recommendations: "பரிந்துரைகள்" },
+    nav: { home: "முகப்பு", crops: "பயிர் நூலகம்", community: "சமூகம்", mandi: "மண்டி விலைகள்", transport: "போக்குவரத்து", diagnosis: "நோய் கண்டறிதல்", recommendations: "பரிந்துரைகள்", yieldPredict: "விளைச்சல் கணிப்பு" },
     hero: { title: "அக்ரிலிங்க் — விவசாயி பயிர் நுண்ணறிவு", subtitle: "உங்கள் முழுமையான விவசாய தோழன்", cta: "பயிர்களைக் காண", badge: "AI-இயக்கப்படும் விவசாய நுண்ணறிவு", problemTitle: "வெப் ட்ராக்: விவசாயி பயிர் நுண்ணறிவு + சமூக தளம்", aiDiagnosis: "AI கண்டறிதல்" },
     stats: { cropsListed: "பயிர்கள் பட்டியல்", languages: "மொழிகள்", mandiMarkets: "மண்டி சந்தைகள்", aiPowered: "AI இயக்கம்", realtime: "நிகழ்நேரம்" },
     features: { cropsDesc: "பருவம், மண், நீர்ப்பாசனம், பூச்சிகள், உரம்", communityDesc: "Q&A, உள்ளூர் மொழி, நிபுணர் பதில்கள்", mandiDesc: "மாவட்ட/சந்தை விலைகள் + அருகில் தேடல்", transportDesc: "போக்குவரத்து இணைப்பு, பிக்அப் கோரிக்கை", diagnosisDesc: "புகைப்படங்களிலிருந்து AI நோய் கண்டறிதல்", recommendationsDesc: "மண், இடம் & பருவ அடிப்படை பயிர் ஆலோசனை" },
@@ -133,7 +133,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "ஏற்றுகிறது...", noResults: "முடிவுகள் இல்லை", viewDetails: "விவரங்கள்", back: "பின்", whatsappHelp: "உதவி? WhatsApp", selectLanguage: "மொழி தேர்வு", all: "அனைத்தும்" },
   },
   kn: {
-    nav: { home: "ಮುಖಪುಟ", crops: "ಬೆಳೆ ಗ್ರಂಥಾಲಯ", community: "ಸಮುದಾಯ", mandi: "ಮಂಡಿ ದರಗಳು", transport: "ಸಾರಿಗೆ", diagnosis: "ರೋಗ ನಿರ್ಣಯ", recommendations: "ಶಿಫಾರಸುಗಳು" },
+    nav: { home: "ಮುಖಪುಟ", crops: "ಬೆಳೆ ಗ್ರಂಥಾಲಯ", community: "ಸಮುದಾಯ", mandi: "ಮಂಡಿ ದರಗಳು", transport: "ಸಾರಿಗೆ", diagnosis: "ರೋಗ ನಿರ್ಣಯ", recommendations: "ಶಿಫಾರಸುಗಳು", yieldPredict: "ಇಳುವರಿ ಊಹೆ" },
     hero: { title: "ಆಗ್ರಿಲಿಂಕ್ — ರೈತ ಬೆಳೆ ಬುದ್ಧಿಮತ್ತೆ", subtitle: "ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಕೃಷಿ ಸಂಗಾತಿ", cta: "ಬೆಳೆಗಳನ್ನು ನೋಡಿ", badge: "AI-ಚಾಲಿತ ಕೃಷಿ ಬುದ್ಧಿಮತ್ತೆ", problemTitle: "ವೆಬ್ ಟ್ರ್ಯಾಕ್: ರೈತ ಬೆಳೆ ಬುದ್ಧಿಮತ್ತೆ + ಸಮುದಾಯ ವೇದಿಕೆ", aiDiagnosis: "AI ನಿರ್ಣಯ" },
     stats: { cropsListed: "ಬೆಳೆಗಳ ಪಟ್ಟಿ", languages: "ಭಾಷೆಗಳು", mandiMarkets: "ಮಂಡಿ ಮಾರುಕಟ್ಟೆಗಳು", aiPowered: "AI ಚಾಲಿತ", realtime: "ರಿಯಲ್-ಟೈಮ್" },
     features: { cropsDesc: "ಋತು, ಮಣ್ಣು, ನೀರಾವರಿ, ಕೀಟ, ಗೊಬ್ಬರ", communityDesc: "Q&A, ಸ್ಥಳೀಯ ಭಾಷೆ, ತಜ್ಞರ ಉತ್ತರ", mandiDesc: "ಜಿಲ್ಲೆ/ಮಾರುಕಟ್ಟೆ ದರ + ಹತ್ತಿರ ಹುಡುಕಿ", transportDesc: "ಸಾರಿಗೆಗೆ ಸಂಪರ್ಕ, ಪಿಕಪ್ ವಿನಂತಿ", diagnosisDesc: "ಫೋಟೋಗಳಿಂದ AI ರೋಗ ಗುರುತಿಸುವಿಕೆ", recommendationsDesc: "ಮಣ್ಣು, ಸ್ಥಳ & ಋತು ಆಧಾರಿತ ಬೆಳೆ ಸಲಹೆ" },
@@ -154,7 +154,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "ಲೋಡ್ ಆಗುತ್ತಿದೆ...", noResults: "ಫಲಿತಾಂಶ ಸಿಗಲಿಲ್ಲ", viewDetails: "ವಿವರಗಳು", back: "ಹಿಂದೆ", whatsappHelp: "ಸಹಾಯ? WhatsApp", selectLanguage: "ಭಾಷೆ ಆಯ್ಕೆ", all: "ಎಲ್ಲಾ" },
   },
   ml: {
-    nav: { home: "ഹോം", crops: "വിള ലൈബ്രറി", community: "സമൂഹം", mandi: "മണ്ടി വിലകൾ", transport: "ഗതാഗതം", diagnosis: "രോഗ നിർണയം", recommendations: "ശുപാർശകൾ" },
+    nav: { home: "ഹോം", crops: "വിള ലൈബ്രറി", community: "സമൂഹം", mandi: "മണ്ടി വിലകൾ", transport: "ഗതാഗതം", diagnosis: "രോഗ നിർണയം", recommendations: "ശുപാർശകൾ", yieldPredict: "വിളവ് പ്രവചനം" },
     hero: { title: "ആഗ്രിലിങ്ക് — കർഷക വിള ബുദ്ധിമത്ത", subtitle: "നിങ്ങളുടെ സമ്പൂർണ കൃഷി സഹായി", cta: "വിളകൾ കാണുക", badge: "AI-പ്രവർത്തിത കൃഷി ബുദ്ധിമത്ത", problemTitle: "വെബ് ട്രാക്ക്: കർഷക വിള ബുദ്ധിമത്ത + സമൂഹ വേദിക", aiDiagnosis: "AI നിർണയം" },
     stats: { cropsListed: "വിളകൾ ലിസ്റ്റ്", languages: "ഭാഷകൾ", mandiMarkets: "മണ്ടി മാർക്കറ്റുകൾ", aiPowered: "AI പ്രവർത്തിത", realtime: "തത്സമയം" },
     features: { cropsDesc: "സീസൺ, മണ്ണ്, ജലസേചനം, കീടങ്ങൾ, വളം", communityDesc: "Q&A, പ്രാദേശിക ഭാഷ, വിദഗ്ധ ഉത്തരങ്ങൾ", mandiDesc: "ജില്ല/മാർക്കറ്റ് വിലകൾ + സമീപം തിരയുക", transportDesc: "ഗതാഗത ബന്ധം, പിക്കപ്പ് അഭ്യർഥന", diagnosisDesc: "ഫോട്ടോകളിൽ നിന്ന് AI രോഗ കണ്ടെത്തൽ", recommendationsDesc: "മണ്ണ്, സ്ഥലം & സീസൺ അടിസ്ഥാന വിള ഉപദേശം" },
@@ -175,7 +175,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "ലോഡ് ചെയ്യുന്നു...", noResults: "ഫലങ്ങൾ ഇല്ല", viewDetails: "വിശദാംശങ്ങൾ", back: "മടങ്ങുക", whatsappHelp: "സഹായം? WhatsApp", selectLanguage: "ഭാഷ തിരഞ്ഞെടുക്കുക", all: "എല്ലാം" },
   },
   mr: {
-    nav: { home: "मुखपृष्ठ", crops: "पीक ग्रंथालय", community: "समुदाय", mandi: "मंडी भाव", transport: "वाहतूक", diagnosis: "रोग निदान", recommendations: "शिफारसी" },
+    nav: { home: "मुखपृष्ठ", crops: "पीक ग्रंथालय", community: "समुदाय", mandi: "मंडी भाव", transport: "वाहतूक", diagnosis: "रोग निदान", recommendations: "शिफारसी", yieldPredict: "उत्पादन अंदाज" },
     hero: { title: "अॅग्रीलिंक — शेतकरी पीक बुद्धिमत्ता", subtitle: "तुमचा पूर्ण शेती सोबती", cta: "पिके पहा", badge: "AI-चालित शेती बुद्धिमत्ता", problemTitle: "वेब ट्रॅक: शेतकरी पीक बुद्धिमत्ता + समुदाय व्यासपीठ", aiDiagnosis: "AI निदान" },
     stats: { cropsListed: "पिके सूचीबद्ध", languages: "भाषा", mandiMarkets: "मंडी बाजार", aiPowered: "AI चालित", realtime: "रिअल-टाइम" },
     features: { cropsDesc: "हंगाम, जमीन, सिंचन, किडी, खत", communityDesc: "Q&A, स्थानिक भाषा, तज्ञ उत्तरे", mandiDesc: "जिल्हा/बाजार भाव + जवळ शोधा", transportDesc: "वाहतूक जोडणी, पिकअप विनंती", diagnosisDesc: "फोटोंमधून AI रोग ओळख", recommendationsDesc: "माती, ठिकाण & हंगाम आधारित पीक सल्ला" },
@@ -196,7 +196,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "लोड होत आहे...", noResults: "निकाल सापडले नाहीत", viewDetails: "तपशील पहा", back: "मागे", whatsappHelp: "मदत? WhatsApp", selectLanguage: "भाषा निवडा", all: "सर्व" },
   },
   bn: {
-    nav: { home: "হোম", crops: "ফসল গ্রন্থাগার", community: "সম্প্রদায়", mandi: "মান্ডি দর", transport: "পরিবহন", diagnosis: "রোগ নির্ণয়", recommendations: "সুপারিশ" },
+    nav: { home: "হোম", crops: "ফসল গ্রন্থাগার", community: "সম্প্রদায়", mandi: "মান্ডি দর", transport: "পরিবহন", diagnosis: "রোগ নির্ণয়", recommendations: "সুপারিশ", yieldPredict: "ফলন পূর্বাভাস" },
     hero: { title: "অ্যাগ্রিলিংক — কৃষক ফসল বুদ্ধিমত্তা", subtitle: "আপনার সম্পূর্ণ কৃষি সঙ্গী", cta: "ফসল দেখুন", badge: "AI-চালিত কৃষি বুদ্ধিমত্তা", problemTitle: "ওয়েব ট্র্যাক: কৃষক ফসল বুদ্ধিমত্তা + সম্প্রদায় মঞ্চ", aiDiagnosis: "AI নির্ণয়" },
     stats: { cropsListed: "ফসল তালিকাভুক্ত", languages: "ভাষা", mandiMarkets: "মান্ডি বাজার", aiPowered: "AI চালিত", realtime: "রিয়েল-টাইম" },
     features: { cropsDesc: "মৌসুম, মাটি, সেচ, কীটপতঙ্গ, সার", communityDesc: "Q&A, স্থানীয় ভাষা, বিশেষজ্ঞ উত্তর", mandiDesc: "জেলা/বাজার দর + কাছাকাছি খুঁজুন", transportDesc: "পরিবহন সংযোগ, পিকআপ অনুরোধ", diagnosisDesc: "ছবি থেকে AI রোগ সনাক্তকরণ", recommendationsDesc: "মাটি, অবস্থান & মৌসুম ভিত্তিক ফসল পরামর্শ" },
@@ -217,7 +217,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "লোড হচ্ছে...", noResults: "ফলাফল নেই", viewDetails: "বিস্তারিত", back: "পিছনে", whatsappHelp: "সাহায্য? WhatsApp", selectLanguage: "ভাষা নির্বাচন", all: "সব" },
   },
   gu: {
-    nav: { home: "હોમ", crops: "પાક પુસ્તકાલય", community: "સમુદાય", mandi: "મંડી ભાવ", transport: "પરિવહન", diagnosis: "રોગ નિદાન", recommendations: "ભલામણો" },
+    nav: { home: "હોમ", crops: "પાક પુસ્તકાલય", community: "સમુદાય", mandi: "મંડી ભાવ", transport: "પરિવહન", diagnosis: "રોગ નિદાન", recommendations: "ભલામણો", yieldPredict: "ઉપજ આગાહી" },
     hero: { title: "એગ્રીલિંક — ખેડૂત પાક બુદ્ધિમત્તા", subtitle: "તમારો સંપૂર્ણ ખેતી સાથી", cta: "પાક જુઓ", badge: "AI-સંચાલિત ખેતી બુદ્ધિમત્તા", problemTitle: "વેબ ટ્રેક: ખેડૂત પાક બુદ્ધિમત્તા + સમુદાય પ્લેટફોર્મ", aiDiagnosis: "AI નિદાન" },
     stats: { cropsListed: "પાક સૂચિ", languages: "ભાષાઓ", mandiMarkets: "મંડી બજાર", aiPowered: "AI સંચાલિત", realtime: "રીઅલ-ટાઈમ" },
     features: { cropsDesc: "ઋતુ, માટી, સિંચાઈ, જીવાત, ખાતર", communityDesc: "Q&A, સ્થાનિક ભાષા, નિષ્ણાત જવાબ", mandiDesc: "જિલ્લા/બજાર ભાવ + નજીકમાં શોધો", transportDesc: "પરિવહન જોડાણ, પિકઅપ વિનંતી", diagnosisDesc: "ફોટોમાંથી AI રોગ ઓળખ", recommendationsDesc: "માટી, સ્થાન & ઋતુ આધારિત પાક સલાહ" },
@@ -238,7 +238,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "લોડ થઈ રહ્યું છે...", noResults: "પરિણામ મળ્યા નથી", viewDetails: "વિગતો", back: "પાછળ", whatsappHelp: "મદદ? WhatsApp", selectLanguage: "ભાષા પસંદ કરો", all: "બધા" },
   },
   pa: {
-    nav: { home: "ਹੋਮ", crops: "ਫਸਲ ਲਾਇਬ੍ਰੇਰੀ", community: "ਭਾਈਚਾਰਾ", mandi: "ਮੰਡੀ ਰੇਟ", transport: "ਟ੍ਰਾਂਸਪੋਰਟ", diagnosis: "ਰੋਗ ਨਿਦਾਨ", recommendations: "ਸਿਫਾਰਸ਼ਾਂ" },
+    nav: { home: "ਹੋਮ", crops: "ਫਸਲ ਲਾਇਬ੍ਰੇਰੀ", community: "ਭਾਈਚਾਰਾ", mandi: "ਮੰਡੀ ਰੇਟ", transport: "ਟ੍ਰਾਂਸਪੋਰਟ", diagnosis: "ਰੋਗ ਨਿਦਾਨ", recommendations: "ਸਿਫਾਰਸ਼ਾਂ", yieldPredict: "ਉਪਜ ਭਵਿੱਖਬਾਣੀ" },
     hero: { title: "ਐਗਰੀਲਿੰਕ — ਕਿਸਾਨ ਫਸਲ ਬੁੱਧੀ", subtitle: "ਤੁਹਾਡਾ ਪੂਰਾ ਖੇਤੀ ਸਾਥੀ", cta: "ਫਸਲਾਂ ਵੇਖੋ", badge: "AI-ਸੰਚਾਲਿਤ ਖੇਤੀ ਬੁੱਧੀ", problemTitle: "ਵੈੱਬ ਟ੍ਰੈਕ: ਕਿਸਾਨ ਫਸਲ ਬੁੱਧੀ + ਭਾਈਚਾਰਾ ਪਲੇਟਫਾਰਮ", aiDiagnosis: "AI ਨਿਦਾਨ" },
     stats: { cropsListed: "ਫਸਲਾਂ ਸੂਚੀਬੱਧ", languages: "ਭਾਸ਼ਾਵਾਂ", mandiMarkets: "ਮੰਡੀ ਬਜ਼ਾਰ", aiPowered: "AI ਸੰਚਾਲਿਤ", realtime: "ਰੀਅਲ-ਟਾਈਮ" },
     features: { cropsDesc: "ਮੌਸਮ, ਮਿੱਟੀ, ਸਿੰਚਾਈ, ਕੀੜੇ, ਖਾਦ", communityDesc: "Q&A, ਸਥਾਨਕ ਭਾਸ਼ਾ, ਮਾਹਿਰ ਜਵਾਬ", mandiDesc: "ਜ਼ਿਲ੍ਹਾ/ਬਜ਼ਾਰ ਰੇਟ + ਨੇੜੇ ਲੱਭੋ", transportDesc: "ਟ੍ਰਾਂਸਪੋਰਟ ਕਨੈਕਸ਼ਨ, ਪਿੱਕਅੱਪ ਬੇਨਤੀ", diagnosisDesc: "ਫੋਟੋਆਂ ਤੋਂ AI ਰੋਗ ਪਛਾਣ", recommendationsDesc: "ਮਿੱਟੀ, ਥਾਂ & ਮੌਸਮ ਅਧਾਰਿਤ ਫਸਲ ਸਲਾਹ" },
