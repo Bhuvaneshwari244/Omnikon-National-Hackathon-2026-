@@ -33,7 +33,7 @@ export const languages = [
 ];
 
 type TranslationKeys = {
-  nav: { home: string; crops: string; community: string; mandi: string; transport: string; diagnosis: string; recommendations: string };
+  nav: { home: string; crops: string; community: string; mandi: string; transport: string; diagnosis: string; recommendations: string; yieldPredict: string };
   hero: { title: string; subtitle: string; cta: string; badge: string; problemTitle: string; aiDiagnosis: string };
   stats: { cropsListed: string; languages: string; mandiMarkets: string; aiPowered: string; realtime: string };
   features: { cropsDesc: string; communityDesc: string; mandiDesc: string; transportDesc: string; diagnosisDesc: string; recommendationsDesc: string };
@@ -49,7 +49,7 @@ type TranslationKeys = {
 
 export const translations: Record<string, TranslationKeys> = {
   en: {
-    nav: { home: "Home", crops: "Crop Library", community: "Community", mandi: "Mandi Rates", transport: "Transport", diagnosis: "Diagnosis", recommendations: "Recommendations" },
+    nav: { home: "Home", crops: "Crop Library", community: "Community", mandi: "Mandi Rates", transport: "Transport", diagnosis: "Diagnosis", recommendations: "Recommendations", yieldPredict: "Yield Predict" },
     hero: { title: "AgriLink — Farmer Crop Intelligence", subtitle: "Your complete farming companion: crop info, community Q&A, mandi rates, transport, and AI-powered disease diagnosis", cta: "Explore Crops", badge: "AI-Powered Farming Intelligence", problemTitle: "Web Track: Farmer Crop Intelligence + Community Platform", aiDiagnosis: "AI Diagnosis" },
     stats: { cropsListed: "Crops Listed", languages: "Languages", mandiMarkets: "Mandi Markets", aiPowered: "AI Powered", realtime: "Real-time" },
     features: { cropsDesc: "Seasonality, soil, irrigation, pests, fertilizer schedules", communityDesc: "Q&A, local language support, expert answers", mandiDesc: "Live rates by district/market + nearby search", transportDesc: "Connect to logistics, request pickup flow", diagnosisDesc: "AI-powered disease detection from photos", recommendationsDesc: "Soil, location & season based crop advice" },
@@ -70,7 +70,7 @@ export const translations: Record<string, TranslationKeys> = {
     common: { loading: "Loading...", noResults: "No results found", viewDetails: "View Details", back: "Back", whatsappHelp: "Need help? Chat on WhatsApp", selectLanguage: "Select Language", all: "All" },
   },
   hi: {
-    nav: { home: "होम", crops: "फसल पुस्तकालय", community: "समुदाय", mandi: "मंडी भाव", transport: "परिवहन", diagnosis: "रोग निदान", recommendations: "सिफारिशें" },
+    nav: { home: "होम", crops: "फसल पुस्तकालय", community: "समुदाय", mandi: "मंडी भाव", transport: "परिवहन", diagnosis: "रोग निदान", recommendations: "सिफारिशें", yieldPredict: "उपज भविष्यवाणी" },
     hero: { title: "एग्रीलिंक — किसान फसल बुद्धिमत्ता", subtitle: "आपका पूर्ण कृषि साथी: फसल जानकारी, समुदाय प्रश्नोत्तर, मंडी भाव, परिवहन, और AI रोग निदान", cta: "फसलें देखें", badge: "AI-संचालित कृषि बुद्धिमत्ता", problemTitle: "वेब ट्रैक: किसान फसल बुद्धिमत्ता + समुदाय मंच", aiDiagnosis: "AI निदान" },
     stats: { cropsListed: "फसलें सूचीबद्ध", languages: "भाषाएं", mandiMarkets: "मंडी बाज़ार", aiPowered: "AI संचालित", realtime: "रीयल-टाइम" },
     features: { cropsDesc: "मौसम, मिट्टी, सिंचाई, कीट, उर्वरक अनुसूची", communityDesc: "प्रश्नोत्तर, स्थानीय भाषा, विशेषज्ञ उत्तर", mandiDesc: "जिला/बाज़ार के अनुसार भाव + आसपास खोजें", transportDesc: "लॉजिस्टिक्स से जुड़ें, पिकअप अनुरोध", diagnosisDesc: "फोटो से AI रोग पहचान", recommendationsDesc: "मिट्टी, स्थान और मौसम आधारित फसल सलाह" },
