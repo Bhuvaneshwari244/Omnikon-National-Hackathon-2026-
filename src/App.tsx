@@ -12,6 +12,7 @@ import MandiRates from "./pages/MandiRates";
 import Transport from "./pages/Transport";
 import Diagnosis from "./pages/Diagnosis";
 import Recommendations from "./pages/Recommendations";
+import YieldPredict from "./pages/YieldPredict";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/transport" element={<Transport />} />
               <Route path="/diagnosis" element={<Diagnosis />} />
               <Route path="/recommendations" element={<Recommendations />} />
+              <Route path="/yield-predict" element={<YieldPredict />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { languages } from "@/data/translations";
-import { Home, BookOpen, Users, BarChart3, Truck, Stethoscope, Star, Menu, X, MessageCircle } from "lucide-react";
+import { Home, BookOpen, Users, BarChart3, Truck, Stethoscope, Star, Sparkles, Menu, X, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,6 +15,7 @@ const navItems = [
   { path: "/transport", icon: Truck, key: "transport" as const },
   { path: "/diagnosis", icon: Stethoscope, key: "diagnosis" as const },
   { path: "/recommendations", icon: Star, key: "recommendations" as const },
+  { path: "/yield-predict", icon: Sparkles, key: "yieldPredict" as const },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
