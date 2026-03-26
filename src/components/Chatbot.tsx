@@ -115,7 +115,7 @@ export default function Chatbot() {
       {/* Chat Button - positioned above WhatsApp */}
       <motion.button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-32 md:bottom-16 right-4 z-50 bg-primary hover:bg-primary/90 text-primary-foreground rounded-2xl p-3.5 shadow-lg"
+        className="fixed bottom-36 md:bottom-24 right-4 z-50 bg-primary hover:bg-primary/90 text-primary-foreground rounded-2xl p-3.5 shadow-lg"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -130,13 +130,15 @@ export default function Chatbot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-44 md:bottom-28 right-4 z-50 w-[340px] sm:w-[380px] max-h-[70vh] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-52 md:bottom-40 right-4 z-50 w-[340px] sm:w-[380px] max-h-[60vh] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="bg-primary text-primary-foreground px-4 py-3 flex items-center gap-2">
               <Bot size={20} />
               <span className="font-semibold text-sm">{labels.title}</span>
-              <div className="ml-auto w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <button onClick={() => setOpen(false)} className="ml-auto p-1 hover:bg-primary-foreground/20 rounded-lg transition-colors">
+                <X size={16} />
+              </button>
             </div>
 
             {/* Messages */}

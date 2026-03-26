@@ -131,7 +131,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <motion.a
         href={buildWhatsAppLink("Hi AgriLink, I need help with farming")}
         target="_blank" rel="noopener noreferrer"
-        className="fixed bottom-20 md:bottom-6 right-4 z-50 bg-green-500 hover:bg-green-600 text-white rounded-2xl p-3.5 shadow-lg"
+        className="fixed bottom-20 md:bottom-6 right-4 z-50 bg-green-500 hover:bg-green-600 text-white rounded-2xl p-3 shadow-lg"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
