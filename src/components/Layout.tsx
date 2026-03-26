@@ -6,6 +6,7 @@ import { useState } from "react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedBackground from "./AnimatedBackground";
+import Chatbot from "./Chatbot";
 
 const navItems = [
   { path: "/", icon: Home, key: "home" as const },
