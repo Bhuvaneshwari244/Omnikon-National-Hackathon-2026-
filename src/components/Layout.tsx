@@ -124,6 +124,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
 
+      {/* Chatbot */}
+      <Chatbot />
+
       {/* WhatsApp Floating Button */}
       <motion.a
         href={buildWhatsAppLink("Hi AgriLink, I need help with farming")}
