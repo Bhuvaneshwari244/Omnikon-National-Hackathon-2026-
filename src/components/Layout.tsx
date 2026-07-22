@@ -7,6 +7,7 @@ import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedBackground from "./AnimatedBackground";
 import Chatbot from "./Chatbot";
+import { useAutoTranslate } from "@/hooks/useAutoTranslate";
 
 const navItems = [
   { path: "/", icon: Home, key: "home" as const },
@@ -23,6 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const { lang, setLang, t } = useLanguage();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  useAutoTranslate();
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
