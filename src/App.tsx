@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import CropLibrary from "./pages/CropLibrary";
@@ -18,7 +18,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const AppRoutes = () => {
-  const { lang } = require("@/contexts/LanguageContext").useLanguage();
+  const { lang } = useLanguage();
   return (
     <div key={lang}>
       <Routes>
