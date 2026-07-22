@@ -2,3 +2,6 @@ project_id = "kwjaqagstjixbnzbhtpf"
 
 [functions.diagnose-crop]
 verify_jwt = false
+
+[functions.translate-batch]
+verify_jwt = false
