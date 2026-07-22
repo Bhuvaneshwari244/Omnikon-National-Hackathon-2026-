@@ -32,7 +32,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Top Navbar */}
       <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-xl border-b border-border/50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-2 group" data-no-translate>
             <span className="text-2xl">🌾</span>
             <span className="text-xl font-display font-bold text-gradient tracking-tight">AgriLink</span>
           </Link>
@@ -59,6 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </nav>
           <div className="flex items-center gap-3">
             <select value={lang} onChange={e => setLang(e.target.value)}
+              data-no-translate
               className="bg-secondary text-secondary-foreground text-xs rounded-xl px-3 py-2 border border-border/50 focus:ring-2 focus:ring-primary outline-none">
               {languages.map(l => <option key={l.code} value={l.code}>{l.native}</option>)}
             </select>
