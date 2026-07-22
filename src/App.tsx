@@ -17,6 +17,25 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const AppRoutes = () => {
+  const { lang } = require("@/contexts/LanguageContext").useLanguage();
+  return (
+    <div key={lang}>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/crops" element={<CropLibrary />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/mandi" element={<MandiRates />} />
+        <Route path="/transport" element={<Transport />} />
+        <Route path="/diagnosis" element={<Diagnosis />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+        <Route path="/yield-predict" element={<YieldPredict />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -25,17 +44,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Layout>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/crops" element={<CropLibrary />} />
-              <Route path="/community" element={<Community />} />
-              <Route path="/mandi" element={<MandiRates />} />
-              <Route path="/transport" element={<Transport />} />
-              <Route path="/diagnosis" element={<Diagnosis />} />
-              <Route path="/recommendations" element={<Recommendations />} />
-              <Route path="/yield-predict" element={<YieldPredict />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <AppRoutes />
           </Layout>
         </BrowserRouter>
       </LanguageProvider>
