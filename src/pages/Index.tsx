@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { BookOpen, Users, BarChart3, Truck, Stethoscope, Star, ChevronRight, Sparkles, TrendingUp, Leaf, Globe, Zap } from "lucide-react";
+import { BookOpen, Users, BarChart3, Truck, Stethoscope, Star, ChevronRight, Sparkles, TrendingUp, Leaf, Globe, Zap, Droplets, CloudRain, Warehouse, Calculator, CreditCard, Heart, QrCode, Bug, HeartHandshake, Flower2, Fish, Tractor } from "lucide-react";
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import { StaggerContainer, StaggerItem } from "@/components/StaggerChildren";
@@ -10,12 +10,24 @@ export default function Index() {
   const { t } = useLanguage();
 
   const features = [
-    { path: "/crops", icon: BookOpen, color: "from-red-600 to-orange-600", title: "crops" as const, desc: t.features.cropsDesc },
-    { path: "/community", icon: Users, color: "from-blue-600 to-cyan-600", title: "community" as const, desc: t.features.communityDesc },
-    { path: "/mandi", icon: BarChart3, color: "from-emerald-600 to-green-600", title: "mandi" as const, desc: t.features.mandiDesc },
-    { path: "/transport", icon: Truck, color: "from-amber-600 to-yellow-600", title: "transport" as const, desc: t.features.transportDesc },
-    { path: "/diagnosis", icon: Stethoscope, color: "from-violet-600 to-purple-600", title: "diagnosis" as const, desc: t.features.diagnosisDesc },
-    { path: "/recommendations", icon: Star, color: "from-orange-600 to-red-600", title: "recommendations" as const, desc: t.features.recommendationsDesc },
+    { path: "/crops", icon: BookOpen, color: "from-red-600 to-orange-600", title: "Crop Library", desc: t.features.cropsDesc },
+    { path: "/diagnosis", icon: Stethoscope, color: "from-violet-600 to-purple-600", title: "AI Diagnosis", desc: t.features.diagnosisDesc },
+    { path: "/irrigation", icon: Droplets, color: "from-cyan-600 to-blue-600", title: "Smart Irrigation", desc: "Smart water management with weather-based scheduling" },
+    { path: "/weather-alerts", icon: CloudRain, color: "from-yellow-600 to-orange-600", title: "Weather Alerts", desc: "Real-time alerts and crop protection guidance" },
+    { path: "/pesticide", icon: Calculator, color: "from-green-600 to-emerald-600", title: "Pesticide Calculator", desc: "Precision dosage calculator to reduce overuse" },
+    { path: "/mandi", icon: BarChart3, color: "from-emerald-600 to-green-600", title: "Mandi Rates", desc: t.features.mandiDesc },
+    { path: "/storage", icon: Warehouse, color: "from-purple-600 to-pink-600", title: "Storage Monitor", desc: "Monitor storage conditions and prevent spoilage" },
+    { path: "/transport", icon: Truck, color: "from-amber-600 to-yellow-600", title: "Transport", desc: t.features.transportDesc },
+    { path: "/credit", icon: CreditCard, color: "from-indigo-600 to-blue-600", title: "Farmer Credit", desc: "Data-driven credit scoring for fair loans" },
+    { path: "/livestock", icon: Heart, color: "from-pink-600 to-rose-600", title: "Livestock Care", desc: "Early disease detection for dairy & poultry" },
+    { path: "/organic-trace", icon: QrCode, color: "from-lime-600 to-green-600", title: "Organic Trace", desc: "Farm-to-consumer organic product traceability" },
+    { path: "/pest-alert", icon: Bug, color: "from-red-600 to-orange-600", title: "Pest Alert", desc: "Community pest outbreak early warning system" },
+    { path: "/food-donation", icon: HeartHandshake, color: "from-green-600 to-teal-600", title: "Food Donation", desc: "Connect surplus produce to NGOs and reduce waste" },
+    { path: "/bee-monitor", icon: Flower2, color: "from-yellow-600 to-amber-600", title: "Bee Monitor", desc: "Prevent bee colony collapse with health tracking" },
+    { path: "/fishing-zones", icon: Fish, color: "from-blue-600 to-cyan-600", title: "Fishing Zones", desc: "Identify safe, productive fishing areas" },
+    { path: "/machinery", icon: Tractor, color: "from-orange-600 to-red-600", title: "Machinery Share", desc: "Share agricultural equipment and reduce costs" },
+    { path: "/community", icon: Users, color: "from-purple-600 to-blue-600", title: "Community", desc: t.features.communityDesc },
+    { path: "/recommendations", icon: Star, color: "from-pink-600 to-purple-600", title: "Recommendations", desc: t.features.recommendationsDesc },
   ];
 
   const stats = [
@@ -200,7 +212,7 @@ export default function Index() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 + 0.1 }}
                   >
-                    {t.nav[f.title]}
+                    {f.title}
                   </motion.h3>
                   <motion.p 
                     className="text-xs text-muted-foreground leading-relaxed"
